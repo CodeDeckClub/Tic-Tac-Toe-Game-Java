@@ -11,7 +11,7 @@ public class Main {
     static String turn;
 
     public static void main(String[] args) {
-        input = new Scanner(System.in);
+        input = new Scanner(System.in).useDelimiter("[\\n\\r\\f]+");
         board = new String[9];
         turn = "X";
         String winner = null;
